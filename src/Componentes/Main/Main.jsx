@@ -5,6 +5,7 @@ import CardDestaque from "./Card/CardDestaque";
 import Cards from "./Card/Cards";
 import "./MainGrid/css/main-grid.css";
 import imagem from "./img/capa.jpg";
+import grafico from "./img/grafico.jpg";
 import "./Css/cards.css";
 import {
   AiFillFileText,
@@ -163,7 +164,15 @@ const Main = () => {
           </div> */}
         </Cards>
       }
-      cCd_1={<Cards texto="Monthly" destaqueTexto="Speding" />}
+      cCd_1={
+        <Cards texto="Monthly" destaqueTexto="Speding">
+          <img
+            src={grafico}
+            alt="Imagem de Gráfico"
+            title="Imagem Gráfico meramente ilustratico"
+          />
+        </Cards>
+      }
     />
   );
 };

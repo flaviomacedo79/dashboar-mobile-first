@@ -14,7 +14,7 @@ const DivCards = styled.div`
   justify-content: space-around;
   gap: 10px;
   align-items: center;
-  margin-top: 60px;
+  padding: 20px 0;
 
   @media (max-width: 600px) {
     margin-top: 10px;
