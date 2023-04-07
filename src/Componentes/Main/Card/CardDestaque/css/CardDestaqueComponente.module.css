@@ -1,0 +1,20 @@
+.cardDestaqueLiEsquerda {
+  position: relative;
+  display: flex;
+  padding: 40px 60px 10px 20px;
+  min-width: 120px;
+}
+
+.cardDestaqueLista {
+  font-size: 16px;
+  flex-direction: column;
+  border-left: 2px solid #aaaaaa;
+  padding-top: 40px;
+  padding-left: 30px;
+  justify-content: start;
+  gap: 5px;
+}
+
+.cardDestaqueBaixo {
+  color: #666666;
+}

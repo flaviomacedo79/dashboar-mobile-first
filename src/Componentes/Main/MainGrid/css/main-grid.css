@@ -1,0 +1,71 @@
+.div-main {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh auto auto;
+  grid-template-areas:
+    "overviewcard0 overviewcard1 overviewcard2 overviewcard3"
+    "carddestaque carddestaque card0 card0"
+    "carddestaque carddestaque card1 card1";
+  gap: 10px;
+}
+
+.overviewcard0 {
+  grid-area: overviewcard0;
+}
+
+.overviewcard1 {
+  grid-area: overviewcard1;
+}
+
+.overviewcard2 {
+  grid-area: overviewcard2;
+}
+
+.overviewcard3 {
+  grid-area: overviewcard3;
+}
+
+.carddestaque {
+  grid-area: carddestaque;
+}
+
+.card0 {
+  grid-area: card0;
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+@media (max-width: 600px) {
+  .main-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "overviewcard0 overviewcard1"
+      "overviewcard2 overviewcard3"
+      "card0 card0"
+      "card1 card1"
+      "carddestaque carddestaque";
+  }
+}
+
+@media (max-width: 450px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      "overviewcard0"
+      "overviewcard1"
+      "overviewcard2"
+      "overviewcard3"
+      "card0"
+      "card1"
+      "carddestaque";
+  }
+}
