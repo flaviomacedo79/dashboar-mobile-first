@@ -1,0 +1,13 @@
+.cardsDiagramacao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 120px;
+}
+
+.cardsTxt {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  text-align: center;
+}

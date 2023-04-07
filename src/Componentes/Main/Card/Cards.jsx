@@ -2,22 +2,32 @@ import React from "react";
 import CardTopo from "./CardTopo";
 import styled from "styled-components";
 
-const Section = styled.section`
+const SectionCards = styled.section`
   background-color: #fff;
   height: 100%;
 `;
 
-const Div = styled.div`
+const DivCards = styled.div`
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  margin-top: 60px;
+
+  @media (max-width: 600px) {
+    margin-top: 10px;
+  }
 `;
 
 const Cards = (props) => {
   return (
     <>
-      <Section id={props.id}>
+      <SectionCards id={props.id}>
         <CardTopo texto={props.texto} destaqueTexto={props.destaqueTexto} />
-        <Div>{props.children}</Div>
-      </Section>
+        <DivCards>{props.children}</DivCards>
+      </SectionCards>
     </>
   );
 };

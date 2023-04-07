@@ -4,6 +4,8 @@ import OverViewCard from "./OverViewCard/OverViewCard";
 import CardDestaque from "./Card/CardDestaque";
 import Cards from "./Card/Cards";
 import "./MainGrid/css/main-grid.css";
+import imagem from "./img/capa.jpg";
+import "./Css/cards.css";
 import {
   AiFillFileText,
   AiFillCalendar,
@@ -60,13 +62,108 @@ const Main = () => {
       cCdd={<CardDestaque texto="Your" destaqueTexto="Events" />}
       cCd_0={
         <Cards texto="Recent" destaqueTexto="Documents">
-          <h1>asdlkçfjalskdf</h1>
-          <h1>asdlkçfjalskdf</h1>
+          <div class="cardsDiagramacao">
+            <div>
+              <img
+                class="cardsImg"
+                src={imagem}
+                alt="Img Documento"
+                title="Documento imagem"
+              />
+              <div class="cardsTxt">
+                <p>tesla-parents</p>
+                <h6>07/16/2018</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardsDiagramacao">
+            <div>
+              <img
+                class="cardsImg"
+                src={imagem}
+                alt="Img Documento"
+                title="Documento imagem"
+              />
+              <div class="cardsTxt">
+                <p>tesla-parents</p>
+                <h6>07/16/2018</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardsDiagramacao">
+            <div>
+              <img
+                class="cardsImg"
+                src={imagem}
+                alt="Img Documento"
+                title="Documento imagem"
+              />
+              <div class="cardsTxt">
+                <p>tesla-parents</p>
+                <h6>07/16/2018</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardsDiagramacao">
+            <div>
+              <img
+                class="cardsImg"
+                src={imagem}
+                alt="Img Documento"
+                title="Documento imagem"
+              />
+              <div class="cardsTxt">
+                <p>tesla-parents</p>
+                <h6>07/16/2018</h6>
+              </div>
+            </div>
+          </div>
+
+          {/* <div>
+              <img
+                class="cardsImg"
+                src={imagem}
+                alt="Img Documento"
+                title="Documento imagem"
+              />
+              <div class="cardsTxt">
+                <p>tesla-parents</p>
+                <h6>07/16/2018</h6>
+              </div>
+            </div>
+
+            <div>
+              <img
+                class="cardsImg"
+                src={imagem}
+                alt="Img Documento"
+                title="Documento imagem"
+              />
+              <div class="cardsTxt">
+                <p>tesla-parents</p>
+                <h6>07/16/2018</h6>
+              </div>
+            </div>
+
+            <div>
+              <img
+                class="cardsImg"
+                src={imagem}
+                alt="Img Documento"
+                title="Documento imagem"
+              />
+              <div class="cardsTxt">
+                <p>tesla-parents</p>
+                <h6>07/16/2018</h6>
+              </div>
+            </div>
+          </div> */}
         </Cards>
       }
-      cCd_1={
-        <Cards texto="Monthly" destaqueTexto="Speding" txt="traatawfasdf" />
-      }
+      cCd_1={<Cards texto="Monthly" destaqueTexto="Speding" />}
     />
   );
 };

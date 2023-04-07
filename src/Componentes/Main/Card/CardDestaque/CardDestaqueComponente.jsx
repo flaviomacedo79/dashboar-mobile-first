@@ -61,7 +61,7 @@ const PCardDestaque = styled.p`
   color: #000000;
 `;
 
-const CardDestaqueComponente = (props) => {
+const CardDestaqueComponente = () => {
   return (
     <>
       <Section>
